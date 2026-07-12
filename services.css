@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+
+    background:#0f172a;
+    color:white;
+
+}
+
+
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+
+}
+
+
+.navbar h2{
+
+    color:#38bdf8;
+    font-size:30px;
+
+}
+
+
+.navbar a{
+
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    border:2px solid #38bdf8;
+    padding:10px 25px;
+    border-radius:25px;
+
+}
+
+
+.navbar a:hover{
+
+    background:#38bdf8;
+    color:black;
+
+}
+
+
+
+.services{
+
+    padding:40px 8%;
+    text-align:center;
+
+}
+
+
+
+.services h1{
+
+    font-size:45px;
+    margin-bottom:40px;
+    color:#38bdf8;
+
+}
+
+
+
+.service-container{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+
+}
+
+
+
+.service-card{
+
+    background:#1e293b;
+    padding:35px 25px;
+    border-radius:20px;
+    transition:0.3s;
+    border:1px solid #334155;
+
+}
+
+
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #38bdf8;
+
+}
+
+
+
+.service-card i{
+
+    font-size:45px;
+    color:#38bdf8;
+    margin-bottom:20px;
+
+}
+
+
+
+.service-card h2{
+
+    margin-bottom:15px;
+    font-size:25px;
+
+}
+
+
+
+.service-card p{
+
+    color:#cbd5e1;
+    line-height:1.6;
+    font-size:16px;
+
+}
+
+
+
+@media(max-width:900px){
+
+.service-container{
+
+grid-template-columns:1fr;
+
+}
+
+}

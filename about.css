@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#262525;
+    color:#fff;
+}
+
+.navbar{
+    width:100%;
+    height:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+    background:#262525;
+}
+
+.logo{
+    color:#5DB9EE;
+    font-size:2rem;
+}
+
+.home-btn{
+    text-decoration:none;
+    color:#fff;
+    border:2px solid #5DB9EE;
+    padding:10px 22px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.home-btn:hover{
+    background:#5DB9EE;
+    color:#262525;
+}
+
+.about{
+    width:100%;
+    min-height:calc(100vh - 80px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:70px;
+    padding:50px 8%;
+}
+
+/* Photo */
+
+.left{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.circle{
+    width:380px;
+    height:380px;
+    border-radius:50%;
+    border:8px solid #5DB9EE;
+    box-shadow:0 0 30px #5DB9EE;
+    overflow:hidden;
+}
+
+.circle img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Right Content */
+
+.right{
+    max-width:650px;
+}
+
+.right h4{
+    color:#5DB9EE;
+    font-size:20px;
+}
+
+.right h1{
+    font-size:55px;
+    margin:10px 0;
+}
+
+.right h2{
+    color:#5DB9EE;
+    margin-bottom:20px;
+}
+
+.right p{
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+/* Skills */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+    margin-bottom:35px;
+}
+
+.skill{
+    width:110px;
+    height:110px;
+    background:#323232;
+    border-radius:15px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    transition:.3s;
+    border:2px solid transparent;
+}
+
+.skill:hover{
+    border-color:#5DB9EE;
+    transform:translateY(-8px);
+}
+
+.skill i{
+    font-size:42px;
+    color:#5DB9EE;
+    margin-bottom:10px;
+}
+
+
+.skill p{
+    margin:0;
+    color:#fff;
+    font-size:15px;
+}
+
+/* Button */
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:12px 28px;
+    background:#5DB9EE;
+    color:#262525;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:transparent;
+    color:#5DB9EE;
+    border:2px solid #5DB9EE;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.about{
+    flex-direction:column;
+    text-align:center;
+}
+
+.circle{
+    width:300px;
+    height:300px;
+}
+
+.skills{
+    justify-content:center;
+}
+
+.right h1{
+    font-size:42px;
+}
+
+}
